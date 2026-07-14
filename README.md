@@ -18,6 +18,11 @@ Choice `init` system: **`runit`** with **`rnuit-init`** for linking to `/sbin/in
 
 `systemd`/`OpenRC` is opt-out with hardware checks, requiring a need to mask and strip them beforehand; since we are in a container, `systemd`/`OpenRC` is too bloated for this circumstance, `runit` is simple, light, and efficient.
 
+## Requirements:
+
+* macOS 26+
+* [apple/container](https://github.com/apple/container.git)
+
 Hermes on Linux minimally requires these run the installation script:
 * `git`
 * `curl` (consequently, `ca-certificates`)
